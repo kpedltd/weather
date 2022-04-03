@@ -1,5 +1,11 @@
 # iOS Weather App
 
+## Prepare pre-commit linting
+```
+$ ./pre-commit.sh
+```
+
+
 ## Toolchain
  - [Open Weather API documentation](https://openweathermap.org/api)
 
