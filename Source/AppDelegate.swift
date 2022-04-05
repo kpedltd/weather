@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  weatherApp
+//  WeatherApp
 //
 //  Created by Егор Ермин on 02.04.2022.
 //

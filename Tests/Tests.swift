@@ -1,12 +1,12 @@
 //
-//  weatherAppTests.swift
-//  weatherAppTests
+//  Tests.swift
+//  Tests
 //
 //  Created by Егор Ермин on 02.04.2022.
 //
 
 import XCTest
-@testable import weatherApp
+@testable import WeatherApp
 
 class weatherAppTests: XCTestCase {
 
