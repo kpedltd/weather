@@ -1,0 +1,11 @@
+repos:
+  - repo: local
+    hooks:
+      - id: swiftlint
+        name: SwiftLint
+        description: "Check Swift files for issues with SwiftLint"
+        entry: "swiftlint lint --strict"
+        language: system
+        verbose: true
+        pass_filenames: false
+        always_run: true
