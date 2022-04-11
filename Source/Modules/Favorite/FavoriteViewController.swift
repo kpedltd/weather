@@ -7,7 +7,15 @@
 
 import UIKit
 
+protocol FavoriteViewProtocol: AnyObject {
+    
+}
+
 final class FavoriteViewController: UIViewController {
+    
+    // MARK: - Properties
+    
+    private let controller: FavoriteControllerProtocol
     
     // MARK: - UI Elements
     
@@ -33,8 +41,11 @@ final class FavoriteViewController: UIViewController {
     
     // MARK: - Lifecycle
     
-    init() {
+    init(_ controller: FavoriteControllerProtocol) {
+        self.controller = controller
         super.init(nibName: nil, bundle: nil)
+        
+        controller.setView(self)
     }
     
     required init?(coder: NSCoder) {
@@ -105,3 +116,9 @@ extension FavoriteViewController: UITableViewDataSource {
 // MARK: - UISearchBarDelegate
 
 extension FavoriteViewController: UISearchBarDelegate { }
+
+// MARK: - FavoriteViewProtocol
+
+extension FavoriteViewController: FavoriteViewProtocol {
+    
+}

@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  WeatherApp
+
+  Created by Егор Ермин on 06.04.2022.
+  
+*/
+
+// MARK: - Favorite
+
+"favoriteTitle" = "Favorite";

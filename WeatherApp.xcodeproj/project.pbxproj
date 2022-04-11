@@ -19,6 +19,12 @@
 		585A4C1627FCE75E0091D0FA /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585A4C1527FCE75E0091D0FA /* FavoriteTableViewCell.swift */; };
 		585A4C1A27FCEBFF0091D0FA /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585A4C1927FCEBFF0091D0FA /* UITableView.swift */; };
 		585A4C1D27FCECB50091D0FA /* ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585A4C1C27FCECB50091D0FA /* ClassIdentifiable.swift */; };
+		585A4C2027FCF9450091D0FA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 585A4C2227FCF9450091D0FA /* Localizable.strings */; };
+		585A4C2627FCFA600091D0FA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585A4C2527FCFA600091D0FA /* String.swift */; };
+		589513722804CD5E00A06A25 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589513712804CD5E00A06A25 /* FavoriteModel.swift */; };
+		589513742804CD8000A06A25 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589513732804CD8000A06A25 /* FavoriteController.swift */; };
+		589513762804CD9E00A06A25 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589513752804CD9E00A06A25 /* FavoriteRouter.swift */; };
+		5895137B2804D22C00A06A25 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5895137A2804D22C00A06A25 /* BaseRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,15 @@
 		585A4C1527FCE75E0091D0FA /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		585A4C1927FCEBFF0091D0FA /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		585A4C1C27FCECB50091D0FA /* ClassIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassIdentifiable.swift; sourceTree = "<group>"; };
+		585A4C2127FCF9450091D0FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		585A4C2527FCFA600091D0FA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		585A4C2827FCFC710091D0FA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		589513712804CD5E00A06A25 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		589513732804CD8000A06A25 /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
+		589513752804CD9E00A06A25 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		5895137A2804D22C00A06A25 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		5895137F2804D9D000A06A25 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		589513812804D9D200A06A25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +124,7 @@
 				582BD4AD27F8833E008CCED2 /* Modules */,
 				585A4C1227FCDF920091D0FA /* Extensions */,
 				585A4C1B27FCEC7B0091D0FA /* Protocols */,
+				589513792804D21800A06A25 /* Base */,
 				582BD4AF27F8835B008CCED2 /* Resources */,
 				582BD4B027F8839C008CCED2 /* Supporting Files */,
 			);
@@ -153,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				582BD48627F882B4008CCED2 /* Assets.xcassets */,
+				585A4C2227FCF9450091D0FA /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -171,6 +188,9 @@
 			children = (
 				585A4C1727FCE7630091D0FA /* Cells */,
 				585A4C1027FCDCD80091D0FA /* FavoriteViewController.swift */,
+				589513712804CD5E00A06A25 /* FavoriteModel.swift */,
+				589513732804CD8000A06A25 /* FavoriteController.swift */,
+				589513752804CD9E00A06A25 /* FavoriteRouter.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -178,6 +198,7 @@
 		585A4C1227FCDF920091D0FA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				585A4C2527FCFA600091D0FA /* String.swift */,
 				585A4C1827FCEBE80091D0FA /* UIKit */,
 			);
 			path = Extensions;
@@ -208,6 +229,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		589513792804D21800A06A25 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5895137A2804D22C00A06A25 /* BaseRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +253,8 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+			);
 			productName = weatherApp;
 			productReference = 582BD47A27F882AD008CCED2 /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -294,8 +325,11 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 582BD47127F882AD008CCED2;
+			packageReferences = (
+			);
 			productRefGroup = 582BD47B27F882AD008CCED2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -313,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				582BD48A27F882B4008CCED2 /* LaunchScreen.storyboard in Resources */,
+				585A4C2027FCF9450091D0FA /* Localizable.strings in Resources */,
 				582BD48727F882B4008CCED2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,12 +373,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589513722804CD5E00A06A25 /* FavoriteModel.swift in Sources */,
 				585A4C1427FCE00E0091D0FA /* UIView.swift in Sources */,
 				582BD48227F882AD008CCED2 /* CurrentWeatherViewController.swift in Sources */,
 				585A4C1D27FCECB50091D0FA /* ClassIdentifiable.swift in Sources */,
+				589513762804CD9E00A06A25 /* FavoriteRouter.swift in Sources */,
 				585A4C1127FCDCD80091D0FA /* FavoriteViewController.swift in Sources */,
+				5895137B2804D22C00A06A25 /* BaseRouter.swift in Sources */,
+				589513742804CD8000A06A25 /* FavoriteController.swift in Sources */,
 				582BD47E27F882AD008CCED2 /* AppDelegate.swift in Sources */,
 				585A4C1627FCE75E0091D0FA /* FavoriteTableViewCell.swift in Sources */,
+				585A4C2627FCFA600091D0FA /* String.swift in Sources */,
 				585A4C1A27FCEBFF0091D0FA /* UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,8 +425,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				582BD48927F882B4008CCED2 /* Base */,
+				5895137F2804D9D000A06A25 /* ru */,
+				589513812804D9D200A06A25 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		585A4C2227FCF9450091D0FA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				585A4C2127FCF9450091D0FA /* en */,
+				585A4C2827FCFC710091D0FA /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -396,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -457,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
